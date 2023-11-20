@@ -4863,7 +4863,7 @@
           <PropertyValue z:Id="i571">
             <PropertyName>Text</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>конец перебора таблицы</_expression>
+            <_expression>"конец перебора таблицы"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
