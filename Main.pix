@@ -5,19 +5,27 @@
   <Id>d2a1e321-6c5c-4c1b-a472-f90f8909e1b5</Id>
   <Logic z:Id="i2" i:type="ExecutedStep">
     <Childs>
-      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+      <AbstractStep z:Id="i3" i:type="CommentStep">
+        <Childs />
+        <Id>f8978ad0-bd27-4e7b-bdd7-f8a9e09ab8db</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <Text>определение используемых переменных</Text>
+      </AbstractStep>
+      <AbstractStep z:Id="i4" i:type="ExecutedStep">
         <Childs />
         <Id>d79a5aa2-876d-4519-bb60-9d8bd38338db</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i4">
+          <PropertyValue z:Id="i5">
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>new System.Collections.Generic.Dictionary&lt;string,string&gt;()</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i5">
+          <PropertyValue z:Id="i6">
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>Config</_expression>
@@ -32,19 +40,19 @@
         <Text>Объявление конфига</Text>
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i6" i:type="ExecutedStep">
+      <AbstractStep z:Id="i7" i:type="ExecutedStep">
         <Childs />
         <Id>785e199a-4309-407c-9d06-face70d1c23c</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i7">
+          <PropertyValue z:Id="i8">
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>(Web.Core.WebBrowser)null</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i8">
+          <PropertyValue z:Id="i9">
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>Browser</_expression>
@@ -59,19 +67,19 @@
         <Text>Объявление браузера</Text>
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i9" i:type="ExecutedStep">
+      <AbstractStep z:Id="i10" i:type="ExecutedStep">
         <Childs />
         <Id>6fa76acd-7e0b-4a4f-b072-0ed39f94d81d</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i10">
+          <PropertyValue z:Id="i11">
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>new System.Data.DataTable()</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i11">
+          <PropertyValue z:Id="i12">
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>ChallengeDT</_expression>
@@ -86,24 +94,24 @@
         <Text>Объявление таблицы с данными</Text>
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i12" i:type="ExecutedStep">
+      <AbstractStep z:Id="i13" i:type="ExecutedStep">
         <Childs />
         <Id>f23133b0-af48-4246-9b61-6a4b911e528e</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i13">
+          <PropertyValue z:Id="i14">
             <PropertyName>FilePath</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"Init.pix"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i14">
+          <PropertyValue z:Id="i15">
             <PropertyName>Parameters</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
-              <d7p1:ArgumentItem z:Id="i15">
+              <d7p1:ArgumentItem z:Id="i16">
                 <d7p1:ArgumentName>Config</d7p1:ArgumentName>
                 <d7p1:Expression>Config</d7p1:Expression>
                 <d7p1:Type>IDictionary&lt;System.String, System.String&gt;</d7p1:Type>
@@ -111,7 +119,7 @@
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i16">
+          <PropertyValue z:Id="i17">
             <PropertyName>Timeout</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -126,29 +134,29 @@
         <Text>Инициализация конфигурации настроек </Text>
         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i17" i:type="ExecutedStep">
+      <AbstractStep z:Id="i18" i:type="ExecutedStep">
         <Childs />
         <Id>5a20c446-e126-4f88-9eb9-53f879ffcd56</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i18">
+          <PropertyValue z:Id="i19">
             <PropertyName>FilePath</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"OpenBrowser.pix"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i19">
+          <PropertyValue z:Id="i20">
             <PropertyName>Parameters</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
-              <d7p1:ArgumentItem z:Id="i20">
+              <d7p1:ArgumentItem z:Id="i21">
                 <d7p1:ArgumentName>Config</d7p1:ArgumentName>
                 <d7p1:Expression>Config</d7p1:Expression>
                 <d7p1:Type>IDictionary&lt;System.String, System.String&gt;</d7p1:Type>
               </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i21">
+              <d7p1:ArgumentItem z:Id="i22">
                 <d7p1:ArgumentName>Browser</d7p1:ArgumentName>
                 <d7p1:Expression>Browser</d7p1:Expression>
                 <d7p1:Type>Web.Core.WebBrowser</d7p1:Type>
@@ -156,7 +164,7 @@
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i22">
+          <PropertyValue z:Id="i23">
             <PropertyName>Timeout</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -171,29 +179,29 @@
         <Text>Открытие браузера</Text>
         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i23" i:type="ExecutedStep">
+      <AbstractStep z:Id="i24" i:type="ExecutedStep">
         <Childs />
         <Id>b89c8ee5-b17d-43e4-bbfd-1089f36fca2c</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i24">
+          <PropertyValue z:Id="i25">
             <PropertyName>FilePath</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"GetData.pix"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i25">
+          <PropertyValue z:Id="i26">
             <PropertyName>Parameters</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
-              <d7p1:ArgumentItem z:Id="i26">
+              <d7p1:ArgumentItem z:Id="i27">
                 <d7p1:ArgumentName>Browser</d7p1:ArgumentName>
                 <d7p1:Expression>Browser</d7p1:Expression>
                 <d7p1:Type>Web.Core.WebBrowser</d7p1:Type>
               </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i27">
+              <d7p1:ArgumentItem z:Id="i28">
                 <d7p1:ArgumentName>ChallengeDT</d7p1:ArgumentName>
                 <d7p1:Expression>ChallengeDT</d7p1:Expression>
                 <d7p1:Type>System.Data.DataTable</d7p1:Type>
@@ -201,7 +209,7 @@
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i28">
+          <PropertyValue z:Id="i29">
             <PropertyName>Timeout</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -216,29 +224,29 @@
         <Text>Получение данных </Text>
         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i29" i:type="ExecutedStep">
+      <AbstractStep z:Id="i30" i:type="ExecutedStep">
         <Childs />
         <Id>8b03ce1e-ac49-4cde-a7f2-edf9f8e06bb0</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i30">
+          <PropertyValue z:Id="i31">
             <PropertyName>FilePath</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"Process.pix"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i31">
+          <PropertyValue z:Id="i32">
             <PropertyName>Parameters</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
-              <d7p1:ArgumentItem z:Id="i32">
+              <d7p1:ArgumentItem z:Id="i33">
                 <d7p1:ArgumentName>ChallengeDT</d7p1:ArgumentName>
                 <d7p1:Expression>ChallengeDT</d7p1:Expression>
                 <d7p1:Type>System.Data.DataTable</d7p1:Type>
               </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i33">
+              <d7p1:ArgumentItem z:Id="i34">
                 <d7p1:ArgumentName>Browser</d7p1:ArgumentName>
                 <d7p1:Expression>Browser</d7p1:Expression>
                 <d7p1:Type>Web.Core.WebBrowser</d7p1:Type>
@@ -246,7 +254,7 @@
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i34">
+          <PropertyValue z:Id="i35">
             <PropertyName>Timeout</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -261,24 +269,24 @@
         <Text>Обработка данных</Text>
         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i35" i:type="ExecutedStep">
+      <AbstractStep z:Id="i36" i:type="ExecutedStep">
         <Childs />
         <Id>1c15a239-83ec-4423-9736-ee485fad44ae</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i36">
+          <PropertyValue z:Id="i37">
             <PropertyName>FilePath</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"CloseBrowser.pix"</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i37">
+          <PropertyValue z:Id="i38">
             <PropertyName>Parameters</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
-              <d7p1:ArgumentItem z:Id="i38">
+              <d7p1:ArgumentItem z:Id="i39">
                 <d7p1:ArgumentName>Browser</d7p1:ArgumentName>
                 <d7p1:Expression>Browser</d7p1:Expression>
                 <d7p1:Type>Web.Core.WebBrowser</d7p1:Type>
@@ -286,7 +294,7 @@
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i39">
+          <PropertyValue z:Id="i40">
             <PropertyName>Timeout</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
